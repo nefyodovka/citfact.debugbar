@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": ">=7.4",
-        "maximebf/debugbar": "1.*"
+        "maximebf/debugbar": "1.*",
+        "composer-runtime-api": "^2.0"
     },
     "extra": {
         "installer-name": "qbs.debugbar"
