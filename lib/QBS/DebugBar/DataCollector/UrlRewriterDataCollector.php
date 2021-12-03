@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Citfact\DebugBar\DataCollector;
+namespace QBS\DebugBar\DataCollector;
 
 use Bitrix\Main\UrlRewriter;
 use DebugBar\DataCollector\Renderable;

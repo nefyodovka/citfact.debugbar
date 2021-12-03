@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-$MESS['DEBUGBAR_ACTIVE'] = 'Включть PHP Debug Bar';
+$MESS['DEBUGBAR_ACTIVE'] = 'Включить PHP Debug Bar';
 $MESS['DEBUGBAR_GRANTED'] = 'Виден только пользователям с правами администратора';
 $MESS['DEBUGBAR_TAB'] = 'Настройки';
 $MESS['DEBUGBAR_TAB_TITLE'] = 'Настройки';

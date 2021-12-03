@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Citfact\DebugBar;
+namespace QBS\DebugBar;
 
 use Bitrix\Main\Config;
 use DebugBar\DebugBar as BaseDebugBar;
@@ -19,7 +19,7 @@ use DebugBar\DataCollector\TimeDataCollector;
 use DebugBar\DataCollector\RequestDataCollector;
 use DebugBar\DataCollector\MemoryCollector;
 use DebugBar\DataCollector\ExceptionsCollector;
-use Citfact\DebugBar\DataCollector\UrlRewriterDataCollector;
+use QBS\DebugBar\DataCollector\UrlRewriterDataCollector;
 
 class Debug
 {
@@ -67,7 +67,7 @@ class Debug
      */
     public function isActive()
     {
-        return (Config\Option::get('citfact.debugbar', 'ACTIVE') == 'Y');
+        return (Config\Option::get('qbs.debugbar', 'ACTIVE') == 'Y');
     }
 
     /**
@@ -75,7 +75,7 @@ class Debug
      */
     public function isGranted()
     {
-        $checkPermission = (Config\Option::get('citfact.debugbar', 'GRANTED') == 'Y');
+        $checkPermission = (Config\Option::get('qbs.debugbar', 'GRANTED') == 'Y');
 
         return ($checkPermission) ? $GLOBALS['USER']->IsAdmin() : true;
     }

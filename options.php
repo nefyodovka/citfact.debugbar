@@ -17,7 +17,7 @@ Loc::loadMessages(__FILE__);
 
 $app = Application::getInstance();
 $request = $app->getContext()->getRequest();
-$moduleId = 'citfact.debugbar';
+$moduleId = 'qbs.debugbar';
 
 $allOptions = array(
     array('ACTIVE', Loc::getMessage('DEBUGBAR_ACTIVE'), 'Y', array('checkbox', 'Y')),

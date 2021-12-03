@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Citfact\DebugBar;
+namespace QBS\DebugBar;
 
 use Bitrix\Main\Loader;
 
@@ -20,7 +20,7 @@ class DebugEvent
      */
     public static function includeModule()
     {
-        Loader::includeModule('citfact.debugbar');
+        Loader::includeModule('qbs.debugbar');
     }
 
     /**

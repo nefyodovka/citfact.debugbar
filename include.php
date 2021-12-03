@@ -13,8 +13,8 @@ use Bitrix\Main\Loader;
 
 require_once __DIR__.'/lib/DebugFunctions.php';
 
-Loader::registerAutoLoadClasses('citfact.debugbar', array(
-    'Citfact\\DebugBar\\DataCollector\UrlRewriterDataCollector' => 'lib/Citfact/DebugBar/DataCollector/UrlRewriterDataCollector.php',
-    'Citfact\\DebugBar\\Debug' => 'lib/Citfact/DebugBar/Debug.php',
-    'Citfact\\DebugBar\\DebugEvent' => 'lib/Citfact/DebugBar/DebugEvent.php',
+Loader::registerAutoLoadClasses('qbs.debugbar', array(
+    'QBS\\DebugBar\\DataCollector\UrlRewriterDataCollector' => 'lib/QBS/DebugBar/DataCollector/UrlRewriterDataCollector.php',
+    'QBS\\DebugBar\\Debug' => 'lib/QBS/DebugBar/Debug.php',
+    'QBS\\DebugBar\\DebugEvent' => 'lib/QBS/DebugBar/DebugEvent.php',
 ));

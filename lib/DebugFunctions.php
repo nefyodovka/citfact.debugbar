@@ -15,5 +15,5 @@
  */
 function debugbar_log($message, $type = 'debug')
 {
-    \Citfact\DebugBar\Debug::getInstance()->log($message, $type);
+    \QBS\DebugBar\Debug::getInstance()->log($message, $type);
 }

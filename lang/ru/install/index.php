@@ -11,5 +11,5 @@
 
 $MESS['DEBUGBAR_MODULE_NAME'] = 'PHP Debug Bar';
 $MESS['DEBUGBAR_MODULE_DESCRIPTION'] = 'Отображает индикатор отладки в браузере с информацией из PHP';
-$MESS['PARTNER_NAME'] = 'ООО «Центр интернет технологий «ФАКТ»';
-$MESS['PARTNER_URI'] = 'http://www.studiofact.ru/';
+$MESS['PARTNER_NAME'] = 'QB Solutions';
+$MESS['PARTNER_URI'] = 'http://www.qbs.kz/';

@@ -14,12 +14,12 @@ use Bitrix\Main\EventManager;
 
 Loc::loadMessages(__FILE__);
 
-class citfact_debugbar extends CModule
+class qbs_debugbar extends CModule
 {
     /**
      * @var string
      */
-    public $MODULE_ID = 'citfact.debugbar';
+    public $MODULE_ID = 'qbs.debugbar';
 
     /**
      * @var string
@@ -166,9 +166,9 @@ class citfact_debugbar extends CModule
      */
     public function installEvents()
     {
-        $this->eventManager->registerEventHandler('main', 'OnProlog', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'includeModule');
-        $this->eventManager->registerEventHandler('main', 'OnEndBufferContent', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'render');
-        $this->eventManager->registerEventHandler('main', 'OnEpilog', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'renderAssets');
+        $this->eventManager->registerEventHandler('main', 'OnProlog', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'includeModule');
+        $this->eventManager->registerEventHandler('main', 'OnEndBufferContent', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'render');
+        $this->eventManager->registerEventHandler('main', 'OnEpilog', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'renderAssets');
 
         return true;
     }
@@ -181,9 +181,9 @@ class citfact_debugbar extends CModule
      */
     public function unInstallEvents()
     {
-        $this->eventManager->unRegisterEventHandler('main', 'OnProlog', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'includeModule');
-        $this->eventManager->unRegisterEventHandler('main', 'OnEndBufferContent', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'render');
-        $this->eventManager->unRegisterEventHandler('main', 'OnEpilog', $this->MODULE_ID, 'Citfact\\DebugBar\\DebugEvent', 'renderAssets');
+        $this->eventManager->unRegisterEventHandler('main', 'OnProlog', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'includeModule');
+        $this->eventManager->unRegisterEventHandler('main', 'OnEndBufferContent', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'render');
+        $this->eventManager->unRegisterEventHandler('main', 'OnEpilog', $this->MODULE_ID, 'QBS\\DebugBar\\DebugEvent', 'renderAssets');
 
         return true;
     }
