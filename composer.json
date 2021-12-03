@@ -1,14 +1,14 @@
 {
-    "name": "citfact/debugbar",
+    "name": "qbs/debugbar",
     "type": "bitrix-module",
     "description": "PHP debug bar for 1C-Bitrix",
     "keywords": ["debug bar", "debugbar"],
-    "homepage": "https://github.com/studiofact/citfact.debugbar",
+    "homepage": "https://github.com/nefyodovka/qbs.debugbar",
     "license": "MIT",
     "authors": [
         {
-            "name": "Kulichkin Denis",
-            "email": "onexhovia@gmail.com"
+            "name": "Konstantin Nefyodov",
+            "email": "k.nefyodov@gmail.com"
         }
     ],
     "require": {
@@ -17,6 +17,6 @@
         "maximebf/debugbar": "1.*"
     },
     "extra": {
-        "installer-name": "citfact.debugbar"
+        "installer-name": "qbs.debugbar"
     }
 }
