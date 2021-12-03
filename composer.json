@@ -1,6 +1,6 @@
 {
     "name": "qbs/debugbar",
-    "type": "bitrix-module",
+    "type": "bitrix-d7-module",
     "description": "PHP debug bar for 1C-Bitrix",
     "keywords": ["debug bar", "debugbar"],
     "homepage": "https://github.com/nefyodovka/qbs.debugbar",
@@ -14,8 +14,7 @@
     "require": {
         "php": ">=7.2",
         "maximebf/debugbar": "1.*",
-        "composer-runtime-api": "^2.0",
-        "composer/installers": "~2.0"
+        "composer-runtime-api": "^2.0"
     },
     "extra": {
         "installer-name": "qbs.debugbar"
