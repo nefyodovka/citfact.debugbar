@@ -1,4 +1,5 @@
 <?php
+defined('B_PROLOG_INCLUDED') || die;
 
 /*
  * This file is part of the Studio Fact package.
@@ -68,7 +69,9 @@ class qbs_debugbar extends CModule
         $this->MODULE_PATH = $this->getModulePath();
 
         $arModuleVersion = array();
-        include $this->MODULE_PATH . '/install/version.php';
+        //include $this->MODULE_PATH . '/install/version.php';
+
+        include(dirname(__FILE__) . '/version.php');
 
         $this->MODULE_VERSION = $arModuleVersion['VERSION'];
         $this->MODULE_VERSION_DATE = $arModuleVersion['VERSION_DATE'];
