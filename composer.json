@@ -14,12 +14,12 @@
     "require": {
         "php": ">=7.2",
         "maximebf/debugbar": "1.*",
-        "composer-runtime-api": "^2.0"
+        "composer-runtime-api": "^2.0",
+        "composer/installers": "~1.0"
     },
     "extra": {
-        "installer-name": "qbs.debugbar",
         "installer-paths": {
-            "www/local/modules/{$vendor}.{$name}/": ["type:bitrix-d7-module"]
+            "www/local/modules/{$name}/": ["type:bitrix-d7-module"]
         }
     }
 }
