@@ -39,17 +39,22 @@ class DebugEvent
             ->getJavascriptRenderer()
             ->getAssets();
 
+        $assetManager = \Bitrix\Main\Page\Asset::getInstance();
+
+
+
+
+
         // Sets the CSS style for the page
         foreach ($cssAssets as $cssAsset) {
-            //$GLOBALS['APPLICATION']->SetAdditionalCSS(substr($cssAsset, strlen($workPath)));
-            $GLOBALS['APPLICATION']->SetAdditionalCSS($cssAsset);
-
+            $GLOBALS['APPLICATION']->SetAdditionalCSS(substr($cssAsset, strlen($workPath)));
+            $assetManager->addCss($cssAsset,true);
         }
 
         // Sets the js file for the page
         foreach ($jsAssets as $jsAsset) {
-            //$GLOBALS['APPLICATION']->AddHeadScript(substr($jsAsset, strlen($workPath)));
-            $GLOBALS['APPLICATION']->AddHeadScript($jsAsset);
+            $GLOBALS['APPLICATION']->AddHeadScript(substr($jsAsset, strlen($workPath)));
+            $assetManager->addJs($jsAsset, true);
         }
     }
 
