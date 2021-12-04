@@ -17,6 +17,9 @@
         "composer-runtime-api": "^2.0"
     },
     "extra": {
-        "installer-name": "qbs.debugbar"
+        "installer-name": "qbs.debugbar",
+        "installer-paths": {
+            "www/local/modules/{$vendor}.{$name}/": ["type:bitrix-d7-module"]
+        }
     }
 }
