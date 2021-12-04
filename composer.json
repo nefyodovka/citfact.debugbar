@@ -14,6 +14,7 @@
     "require": {
         "php": ">=7.2",
         "maximebf/debugbar": "1.*",
-        "composer-runtime-api": "^2.0"
+        "composer-runtime-api": "^2.0",
+        "composer/installers": "~1.0"
     }
 }
