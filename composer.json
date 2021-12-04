@@ -18,8 +18,6 @@
         "composer/installers": "~1.0"
     },
     "extra": {
-        "installer-paths": {
-            "www/local/modules/": ["type:bitrix-d7-module"]
-        }
+        "bitrix-dir": "www/local"
     }
 }
