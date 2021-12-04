@@ -19,7 +19,7 @@
     },
     "extra": {
         "installer-paths": {
-            "www/local/modules/qbs.debugbar/": ["type:bitrix-d7-module"]
+            "./www/local/modules/qbs.debugbar/": ["type:bitrix-d7-module"]
         }
     }
 }
