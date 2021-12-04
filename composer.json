@@ -16,10 +16,5 @@
         "maximebf/debugbar": "1.*",
         "composer-runtime-api": "^2.0",
         "composer/installers": "~1.0"
-    },
-    "extra": {
-        "installer-paths": {
-            "./www/local/modules/qbs.debugbar/": ["type:bitrix-d7-module"]
-        }
     }
 }
